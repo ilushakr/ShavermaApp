@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0434713C25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */; };
+		0434713D25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */; };
+		0484A48C25A6747700C3320F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48B25A6747700C3320F /* AppDelegate.swift */; };
+		0484A48E25A6747700C3320F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48D25A6747700C3320F /* SceneDelegate.swift */; };
+		0484A49025A6747700C3320F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48F25A6747700C3320F /* ViewController.swift */; };
+		0484A49325A6747700C3320F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484A49125A6747700C3320F /* Main.storyboard */; };
+		0484A49525A6747A00C3320F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484A49425A6747A00C3320F /* Assets.xcassets */; };
+		0484A49825A6747A00C3320F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484A49625A6747A00C3320F /* LaunchScreen.storyboard */; };
+		0484A4AC25A6767E00C3320F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4AB25A6767E00C3320F /* MainViewController.swift */; };
+		0484A4AF25A6771600C3320F /* MenuStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4AE25A6771600C3320F /* MenuStructure.swift */; };
+		0484A4B325A6796500C3320F /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4B225A6796500C3320F /* MenuTableViewController.swift */; };
+		0484A4BD25A67A8900C3320F /* UnsrollableSegmanedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4BC25A67A8900C3320F /* UnsrollableSegmanedControl.swift */; };
+		0484A4C125A67BC900C3320F /* TableViewCellForMerch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4C025A67BC900C3320F /* TableViewCellForMerch.swift */; };
+		0484A4C425A67CCC00C3320F /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4C325A67CCC00C3320F /* PagingCollectionViewLayout.swift */; };
+		0484A4C725A67DC200C3320F /* MerchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4C625A67DC200C3320F /* MerchCollectionViewCell.swift */; };
+		0484A4CA25A68A9D00C3320F /* TableViewCellForMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4C925A68A9D00C3320F /* TableViewCellForMenu.swift */; };
+		0484A4CF25A68C8200C3320F /* PageViewControllerBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4CD25A68C8200C3320F /* PageViewControllerBottomSheet.swift */; };
+		0484A4D025A68C8200C3320F /* PageViewControllerBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4CE25A68C8200C3320F /* PageViewControllerBottomSheet.xib */; };
+		0484A4D425A7410100C3320F /* ItemBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4D225A7410100C3320F /* ItemBottomSheetViewController.swift */; };
+		0484A4D525A7410100C3320F /* ItemBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4D325A7410100C3320F /* ItemBottomSheetViewController.xib */; };
+		0484A4D925A7525F00C3320F /* TableViewCellForMenuUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4D725A7525F00C3320F /* TableViewCellForMenuUI.swift */; };
+		0484A4DA25A7525F00C3320F /* TableViewCellForMenuUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4D825A7525F00C3320F /* TableViewCellForMenuUI.xib */; };
+		0484A4DD25A79FD700C3320F /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4DC25A79FD700C3320F /* DynamicHeightCollectionView.swift */; };
+		0484A4E125A7A53400C3320F /* CellForAddDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4DF25A7A53400C3320F /* CellForAddDelete.swift */; };
+		0484A4E225A7A53400C3320F /* CellForAddDelete.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4E025A7A53400C3320F /* CellForAddDelete.xib */; };
+		0484A4EB25A7BF7000C3320F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4EA25A7BF7000C3320F /* InfoViewController.swift */; };
+		0484A4EF25A877CA00C3320F /* BasketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */; };
+		0484A4F225A8864D00C3320F /* OrderStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4F125A8864D00C3320F /* OrderStructure.swift */; };
+		0484A4F625A88B0A00C3320F /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */; };
+		0484A4F725A88B0A00C3320F /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */; };
+		0484A4FB25A89DE200C3320F /* BasketForAdditionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4F925A89DE200C3320F /* BasketForAdditionalTableViewCell.swift */; };
+		0484A4FC25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4FA25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib */; };
+		0628405B3410AA9E0C0ACA75 /* Pods_ShavermaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18B24D14ADA7145912EDFFE /* Pods_ShavermaApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalBasketCollectionViewCell.swift; sourceTree = "<group>"; };
+		0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalBasketCollectionViewCell.xib; sourceTree = "<group>"; };
+		0484A48825A6747700C3320F /* ShavermaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShavermaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0484A48B25A6747700C3320F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0484A48D25A6747700C3320F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0484A48F25A6747700C3320F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0484A49225A6747700C3320F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0484A49425A6747A00C3320F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0484A49725A6747A00C3320F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0484A49925A6747A00C3320F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0484A4AB25A6767E00C3320F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0484A4AE25A6771600C3320F /* MenuStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStructure.swift; sourceTree = "<group>"; };
+		0484A4B225A6796500C3320F /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		0484A4BC25A67A8900C3320F /* UnsrollableSegmanedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsrollableSegmanedControl.swift; sourceTree = "<group>"; };
+		0484A4C025A67BC900C3320F /* TableViewCellForMerch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForMerch.swift; sourceTree = "<group>"; };
+		0484A4C325A67CCC00C3320F /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		0484A4C625A67DC200C3320F /* MerchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchCollectionViewCell.swift; sourceTree = "<group>"; };
+		0484A4C925A68A9D00C3320F /* TableViewCellForMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForMenu.swift; sourceTree = "<group>"; };
+		0484A4CD25A68C8200C3320F /* PageViewControllerBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControllerBottomSheet.swift; sourceTree = "<group>"; };
+		0484A4CE25A68C8200C3320F /* PageViewControllerBottomSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageViewControllerBottomSheet.xib; sourceTree = "<group>"; };
+		0484A4D225A7410100C3320F /* ItemBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBottomSheetViewController.swift; sourceTree = "<group>"; };
+		0484A4D325A7410100C3320F /* ItemBottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemBottomSheetViewController.xib; sourceTree = "<group>"; };
+		0484A4D725A7525F00C3320F /* TableViewCellForMenuUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForMenuUI.swift; sourceTree = "<group>"; };
+		0484A4D825A7525F00C3320F /* TableViewCellForMenuUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellForMenuUI.xib; sourceTree = "<group>"; };
+		0484A4DC25A79FD700C3320F /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
+		0484A4DF25A7A53400C3320F /* CellForAddDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForAddDelete.swift; sourceTree = "<group>"; };
+		0484A4E025A7A53400C3320F /* CellForAddDelete.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForAddDelete.xib; sourceTree = "<group>"; };
+		0484A4EA25A7BF7000C3320F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewController.swift; sourceTree = "<group>"; };
+		0484A4F125A8864D00C3320F /* OrderStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStructure.swift; sourceTree = "<group>"; };
+		0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
+		0484A4F925A89DE200C3320F /* BasketForAdditionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketForAdditionalTableViewCell.swift; sourceTree = "<group>"; };
+		0484A4FA25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketForAdditionalTableViewCell.xib; sourceTree = "<group>"; };
+		1464DDD51E47B6A425245BCE /* Pods-ShavermaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShavermaApp.release.xcconfig"; path = "Target Support Files/Pods-ShavermaApp/Pods-ShavermaApp.release.xcconfig"; sourceTree = "<group>"; };
+		4DE1F23ED0BE50212F8AB84B /* Pods-ShavermaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShavermaApp.debug.xcconfig"; path = "Target Support Files/Pods-ShavermaApp/Pods-ShavermaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E18B24D14ADA7145912EDFFE /* Pods_ShavermaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShavermaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0484A48525A6747700C3320F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0628405B3410AA9E0C0ACA75 /* Pods_ShavermaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0484A47F25A6747700C3320F = {
+			isa = PBXGroup;
+			children = (
+				0484A48A25A6747700C3320F /* ShavermaApp */,
+				0484A48925A6747700C3320F /* Products */,
+				98AF61CCE799A9F8F8DC847A /* Pods */,
+				3C5D0D3B426EC2C905891518 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0484A48925A6747700C3320F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0484A48825A6747700C3320F /* ShavermaApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0484A48A25A6747700C3320F /* ShavermaApp */ = {
+			isa = PBXGroup;
+			children = (
+				0484A4ED25A877AC00C3320F /* basket */,
+				0484A4CC25A68C1D00C3320F /* bottomSheet */,
+				0484A4B625A67A3700C3320F /* utils */,
+				0484A4B125A6791300C3320F /* menu */,
+				0484A4A525A6762E00C3320F /* main */,
+				0484A48D25A6747700C3320F /* SceneDelegate.swift */,
+				0484A48F25A6747700C3320F /* ViewController.swift */,
+				0484A49125A6747700C3320F /* Main.storyboard */,
+				0484A49425A6747A00C3320F /* Assets.xcassets */,
+				0484A49625A6747A00C3320F /* LaunchScreen.storyboard */,
+				0484A49925A6747A00C3320F /* Info.plist */,
+			);
+			path = ShavermaApp;
+			sourceTree = "<group>";
+		};
+		0484A4A525A6762E00C3320F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				0484A48B25A6747700C3320F /* AppDelegate.swift */,
+				0484A4AB25A6767E00C3320F /* MainViewController.swift */,
+				0484A4AE25A6771600C3320F /* MenuStructure.swift */,
+				0484A4F125A8864D00C3320F /* OrderStructure.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		0484A4B125A6791300C3320F /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				0484A4B225A6796500C3320F /* MenuTableViewController.swift */,
+				0484A4C025A67BC900C3320F /* TableViewCellForMerch.swift */,
+				0484A4C625A67DC200C3320F /* MerchCollectionViewCell.swift */,
+				0484A4C925A68A9D00C3320F /* TableViewCellForMenu.swift */,
+				0484A4D725A7525F00C3320F /* TableViewCellForMenuUI.swift */,
+				0484A4D825A7525F00C3320F /* TableViewCellForMenuUI.xib */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		0484A4B625A67A3700C3320F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				0484A4BC25A67A8900C3320F /* UnsrollableSegmanedControl.swift */,
+				0484A4C325A67CCC00C3320F /* PagingCollectionViewLayout.swift */,
+				0484A4DC25A79FD700C3320F /* DynamicHeightCollectionView.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		0484A4CC25A68C1D00C3320F /* bottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				0484A4CD25A68C8200C3320F /* PageViewControllerBottomSheet.swift */,
+				0484A4CE25A68C8200C3320F /* PageViewControllerBottomSheet.xib */,
+				0484A4D225A7410100C3320F /* ItemBottomSheetViewController.swift */,
+				0484A4D325A7410100C3320F /* ItemBottomSheetViewController.xib */,
+				0484A4DF25A7A53400C3320F /* CellForAddDelete.swift */,
+				0484A4E025A7A53400C3320F /* CellForAddDelete.xib */,
+				0484A4EA25A7BF7000C3320F /* InfoViewController.swift */,
+			);
+			path = bottomSheet;
+			sourceTree = "<group>";
+		};
+		0484A4ED25A877AC00C3320F /* basket */ = {
+			isa = PBXGroup;
+			children = (
+				0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */,
+				0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */,
+				0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */,
+				0484A4F925A89DE200C3320F /* BasketForAdditionalTableViewCell.swift */,
+				0484A4FA25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib */,
+				0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */,
+				0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */,
+			);
+			path = basket;
+			sourceTree = "<group>";
+		};
+		3C5D0D3B426EC2C905891518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18B24D14ADA7145912EDFFE /* Pods_ShavermaApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98AF61CCE799A9F8F8DC847A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DE1F23ED0BE50212F8AB84B /* Pods-ShavermaApp.debug.xcconfig */,
+				1464DDD51E47B6A425245BCE /* Pods-ShavermaApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0484A48725A6747700C3320F /* ShavermaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0484A49C25A6747A00C3320F /* Build configuration list for PBXNativeTarget "ShavermaApp" */;
+			buildPhases = (
+				AEB324C12B3A98BD0472C065 /* [CP] Check Pods Manifest.lock */,
+				0484A48425A6747700C3320F /* Sources */,
+				0484A48525A6747700C3320F /* Frameworks */,
+				0484A48625A6747700C3320F /* Resources */,
+				39DA83E1F3CB88128A8A2CDE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShavermaApp;
+			productName = ShavermaApp;
+			productReference = 0484A48825A6747700C3320F /* ShavermaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0484A48025A6747700C3320F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0484A48725A6747700C3320F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 0484A48325A6747700C3320F /* Build configuration list for PBXProject "ShavermaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0484A47F25A6747700C3320F;
+			productRefGroup = 0484A48925A6747700C3320F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0484A48725A6747700C3320F /* ShavermaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0484A48625A6747700C3320F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0484A4DA25A7525F00C3320F /* TableViewCellForMenuUI.xib in Resources */,
+				0484A4D025A68C8200C3320F /* PageViewControllerBottomSheet.xib in Resources */,
+				0484A4D525A7410100C3320F /* ItemBottomSheetViewController.xib in Resources */,
+				0484A49825A6747A00C3320F /* LaunchScreen.storyboard in Resources */,
+				0484A4FC25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib in Resources */,
+				0484A4E225A7A53400C3320F /* CellForAddDelete.xib in Resources */,
+				0484A4F725A88B0A00C3320F /* BasketTableViewCell.xib in Resources */,
+				0484A49525A6747A00C3320F /* Assets.xcassets in Resources */,
+				0484A49325A6747700C3320F /* Main.storyboard in Resources */,
+				0434713D25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DA83E1F3CB88128A8A2CDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShavermaApp/Pods-ShavermaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShavermaApp/Pods-ShavermaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShavermaApp/Pods-ShavermaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB324C12B3A98BD0472C065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShavermaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0484A48425A6747700C3320F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0484A4CA25A68A9D00C3320F /* TableViewCellForMenu.swift in Sources */,
+				0484A4C725A67DC200C3320F /* MerchCollectionViewCell.swift in Sources */,
+				0484A4DD25A79FD700C3320F /* DynamicHeightCollectionView.swift in Sources */,
+				0484A4D925A7525F00C3320F /* TableViewCellForMenuUI.swift in Sources */,
+				0484A4E125A7A53400C3320F /* CellForAddDelete.swift in Sources */,
+				0434713C25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift in Sources */,
+				0484A4EF25A877CA00C3320F /* BasketTableViewController.swift in Sources */,
+				0484A49025A6747700C3320F /* ViewController.swift in Sources */,
+				0484A4AF25A6771600C3320F /* MenuStructure.swift in Sources */,
+				0484A4CF25A68C8200C3320F /* PageViewControllerBottomSheet.swift in Sources */,
+				0484A4FB25A89DE200C3320F /* BasketForAdditionalTableViewCell.swift in Sources */,
+				0484A4EB25A7BF7000C3320F /* InfoViewController.swift in Sources */,
+				0484A4D425A7410100C3320F /* ItemBottomSheetViewController.swift in Sources */,
+				0484A4C425A67CCC00C3320F /* PagingCollectionViewLayout.swift in Sources */,
+				0484A4BD25A67A8900C3320F /* UnsrollableSegmanedControl.swift in Sources */,
+				0484A4F625A88B0A00C3320F /* BasketTableViewCell.swift in Sources */,
+				0484A4B325A6796500C3320F /* MenuTableViewController.swift in Sources */,
+				0484A48C25A6747700C3320F /* AppDelegate.swift in Sources */,
+				0484A4F225A8864D00C3320F /* OrderStructure.swift in Sources */,
+				0484A48E25A6747700C3320F /* SceneDelegate.swift in Sources */,
+				0484A4AC25A6767E00C3320F /* MainViewController.swift in Sources */,
+				0484A4C125A67BC900C3320F /* TableViewCellForMerch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0484A49125A6747700C3320F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0484A49225A6747700C3320F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0484A49625A6747A00C3320F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0484A49725A6747A00C3320F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0484A49A25A6747A00C3320F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0484A49B25A6747A00C3320F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0484A49D25A6747A00C3320F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE1F23ED0BE50212F8AB84B /* Pods-ShavermaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShavermaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smth.ShavermaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0484A49E25A6747A00C3320F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1464DDD51E47B6A425245BCE /* Pods-ShavermaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShavermaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smth.ShavermaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0484A48325A6747700C3320F /* Build configuration list for PBXProject "ShavermaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0484A49A25A6747A00C3320F /* Debug */,
+				0484A49B25A6747A00C3320F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0484A49C25A6747A00C3320F /* Build configuration list for PBXNativeTarget "ShavermaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0484A49D25A6747A00C3320F /* Debug */,
+				0484A49E25A6747A00C3320F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0484A48025A6747700C3320F /* Project object */;
+}
