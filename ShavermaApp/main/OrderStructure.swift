@@ -8,10 +8,6 @@
 import Foundation
 import Alamofire
 
-//struct Order: Codable {
-//    var orderProducts: [OrderProduct]
-//}
-
 struct OrderProduct {
     var product: Product
     var productCount: Int

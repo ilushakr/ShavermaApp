@@ -2,13 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EOw-W6-P1U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Профиль-->
         <scene sceneID="WzK-Mz-bxX">
             <objects>
                 <viewController id="3kS-ja-6Vr" sceneMemberID="viewController">
@@ -19,73 +20,90 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="tQd-oC-ecP"/>
+                    <navigationItem key="navigationItem" title="Профиль" id="oLQ-fp-5n6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMg-69-Kvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155" y="710"/>
-        </scene>
-        <!--Корзина-->
-        <scene sceneID="bYa-0K-I12">
-            <objects>
-                <tableViewController id="bex-xS-t5c" customClass="BasketTableViewController" customModule="ShavermaApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1F8-9T-BS3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R7O-qH-GVq">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R7O-qH-GVq" id="75F-jM-vZS">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="bex-xS-t5c" id="WE3-hY-5H7"/>
-                            <outlet property="delegate" destination="bex-xS-t5c" id="rdw-5C-JJB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Корзина" id="jAR-Sb-4Wh"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s2p-g6-njJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1041" y="544"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="rZ1-yZ-O3B">
-            <objects>
-                <viewController id="wVp-h3-a4V" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2BT-d9-eEp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="OVk-Yn-aBQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jo1-Vo-wVh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="szA-6w-AB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3789.8550724637685" y="384.375"/>
+            <point key="canvasLocation" x="-155" y="1282"/>
         </scene>
         <!--Item-->
-        <scene sceneID="r4q-HO-jr7">
+        <scene sceneID="Flc-Gn-3zR">
             <objects>
-                <navigationController id="cHf-j3-hiG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p9v-lS-dU9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0s-hh-Mtc">
+                <navigationController id="XYq-Yb-xnK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ggz-XT-g2w"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ld2-3D-oK0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" systemColor="systemYellowColor"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="bex-xS-t5c" kind="relationship" relationship="rootViewController" id="LDk-o9-oIG"/>
+                        <segue destination="3kS-ja-6Vr" kind="relationship" relationship="rootViewController" id="zuI-H3-nOZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nx-gA-WZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovo-Kf-IkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-232"/>
+            <point key="canvasLocation" x="-155" y="544"/>
+        </scene>
+        <!--Корзина-->
+        <scene sceneID="rZ1-yZ-O3B">
+            <objects>
+                <viewController id="wVp-h3-a4V" customClass="BasketViewController" customModule="ShavermaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2BT-d9-eEp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша корзина пуста" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU0-Cs-jcw">
+                                <rect key="frame" x="126.5" y="437.5" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pnM-7z-k4B">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="1f4-cS-wA7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b3-8V-xTI">
+                                <rect key="frame" x="20" y="768" width="374" height="35"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fkx-pW-4vG"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Оплатить" image="book.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OVk-Yn-aBQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OVk-Yn-aBQ" firstAttribute="trailing" secondItem="8b3-8V-xTI" secondAttribute="trailing" constant="20" id="1rF-lM-x7c"/>
+                            <constraint firstItem="OVk-Yn-aBQ" firstAttribute="bottom" secondItem="8b3-8V-xTI" secondAttribute="bottom" constant="10" id="5oP-as-Zym"/>
+                            <constraint firstItem="OVk-Yn-aBQ" firstAttribute="trailing" secondItem="pnM-7z-k4B" secondAttribute="trailing" id="GCJ-bf-pay"/>
+                            <constraint firstItem="pnM-7z-k4B" firstAttribute="top" secondItem="OVk-Yn-aBQ" secondAttribute="top" id="Jgp-ZE-Obp"/>
+                            <constraint firstItem="pnM-7z-k4B" firstAttribute="bottom" secondItem="OVk-Yn-aBQ" secondAttribute="bottom" id="bw1-tc-2Ik"/>
+                            <constraint firstItem="HU0-Cs-jcw" firstAttribute="centerX" secondItem="2BT-d9-eEp" secondAttribute="centerX" id="l94-d7-Oqa"/>
+                            <constraint firstItem="8b3-8V-xTI" firstAttribute="leading" secondItem="OVk-Yn-aBQ" secondAttribute="leading" constant="20" id="nWS-nc-Qa9"/>
+                            <constraint firstItem="HU0-Cs-jcw" firstAttribute="centerY" secondItem="2BT-d9-eEp" secondAttribute="centerY" id="sN4-by-79b"/>
+                            <constraint firstItem="8b3-8V-xTI" firstAttribute="centerX" secondItem="2BT-d9-eEp" secondAttribute="centerX" id="uJC-6J-0b7"/>
+                            <constraint firstItem="pnM-7z-k4B" firstAttribute="leading" secondItem="OVk-Yn-aBQ" secondAttribute="leading" id="xDh-EK-hC8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Корзина" id="jo1-Vo-wVh"/>
+                    <connections>
+                        <outlet property="basketTableView" destination="pnM-7z-k4B" id="kAg-Kc-VWk"/>
+                        <outlet property="emptyBasketLabel" destination="HU0-Cs-jcw" id="OPP-Ua-nPw"/>
+                        <outlet property="payButton" destination="8b3-8V-xTI" id="MUd-zG-r3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="szA-6w-AB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="544"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Cfj-jW-xid">
@@ -114,7 +132,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZG-pJ-VAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1255" y="545"/>
+            <point key="canvasLocation" x="-1255" y="544"/>
         </scene>
         <!--Item-->
         <scene sceneID="UDL-gg-RdU">
@@ -146,8 +164,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="RRS-dz-70t" kind="relationship" relationship="viewControllers" id="p1u-Mr-2zT"/>
-                        <segue destination="3kS-ja-6Vr" kind="relationship" relationship="viewControllers" id="1fu-mK-ZKD"/>
-                        <segue destination="cHf-j3-hiG" kind="relationship" relationship="viewControllers" id="kTw-Jr-vaj"/>
+                        <segue destination="XYq-Yb-xnK" kind="relationship" relationship="viewControllers" id="vId-Uh-oHF"/>
                         <segue destination="8De-HS-6Hd" kind="relationship" relationship="viewControllers" id="aHE-vd-GNn"/>
                     </connections>
                 </tabBarController>
@@ -343,6 +360,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iiw-dP-Byn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <color key="barTintColor" systemColor="systemYellowColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -351,10 +371,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJ4-KP-OmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879.7101449275365" y="384.375"/>
+            <point key="canvasLocation" x="1001" y="-232"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="pencil.slash" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">

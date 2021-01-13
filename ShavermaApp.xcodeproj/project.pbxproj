@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0434713C25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */; };
 		0434713D25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */; };
+		0434714125AE3AAC00C49FAF /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0434714025AE3AAC00C49FAF /* BasketViewController.swift */; };
 		0484A48C25A6747700C3320F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48B25A6747700C3320F /* AppDelegate.swift */; };
 		0484A48E25A6747700C3320F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48D25A6747700C3320F /* SceneDelegate.swift */; };
 		0484A49025A6747700C3320F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A48F25A6747700C3320F /* ViewController.swift */; };
@@ -33,7 +34,6 @@
 		0484A4E125A7A53400C3320F /* CellForAddDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4DF25A7A53400C3320F /* CellForAddDelete.swift */; };
 		0484A4E225A7A53400C3320F /* CellForAddDelete.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4E025A7A53400C3320F /* CellForAddDelete.xib */; };
 		0484A4EB25A7BF7000C3320F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4EA25A7BF7000C3320F /* InfoViewController.swift */; };
-		0484A4EF25A877CA00C3320F /* BasketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */; };
 		0484A4F225A8864D00C3320F /* OrderStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4F125A8864D00C3320F /* OrderStructure.swift */; };
 		0484A4F625A88B0A00C3320F /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */; };
 		0484A4F725A88B0A00C3320F /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */; };
@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalBasketCollectionViewCell.swift; sourceTree = "<group>"; };
 		0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdditionalBasketCollectionViewCell.xib; sourceTree = "<group>"; };
+		0434714025AE3AAC00C49FAF /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		0484A48825A6747700C3320F /* ShavermaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShavermaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484A48B25A6747700C3320F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0484A48D25A6747700C3320F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		0484A4DF25A7A53400C3320F /* CellForAddDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForAddDelete.swift; sourceTree = "<group>"; };
 		0484A4E025A7A53400C3320F /* CellForAddDelete.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellForAddDelete.xib; sourceTree = "<group>"; };
 		0484A4EA25A7BF7000C3320F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewController.swift; sourceTree = "<group>"; };
 		0484A4F125A8864D00C3320F /* OrderStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStructure.swift; sourceTree = "<group>"; };
 		0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
 		0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
@@ -181,13 +181,13 @@
 		0484A4ED25A877AC00C3320F /* basket */ = {
 			isa = PBXGroup;
 			children = (
-				0484A4EE25A877CA00C3320F /* BasketTableViewController.swift */,
 				0484A4F425A88B0A00C3320F /* BasketTableViewCell.swift */,
 				0484A4F525A88B0A00C3320F /* BasketTableViewCell.xib */,
 				0484A4F925A89DE200C3320F /* BasketForAdditionalTableViewCell.swift */,
 				0484A4FA25A89DE200C3320F /* BasketForAdditionalTableViewCell.xib */,
 				0434713A25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift */,
 				0434713B25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.xib */,
+				0434714025AE3AAC00C49FAF /* BasketViewController.swift */,
 			);
 			path = basket;
 			sourceTree = "<group>";
@@ -336,7 +336,6 @@
 				0484A4D925A7525F00C3320F /* TableViewCellForMenuUI.swift in Sources */,
 				0484A4E125A7A53400C3320F /* CellForAddDelete.swift in Sources */,
 				0434713C25A9F2AF00C49FAF /* AdditionalBasketCollectionViewCell.swift in Sources */,
-				0484A4EF25A877CA00C3320F /* BasketTableViewController.swift in Sources */,
 				0484A49025A6747700C3320F /* ViewController.swift in Sources */,
 				0484A4AF25A6771600C3320F /* MenuStructure.swift in Sources */,
 				0484A4CF25A68C8200C3320F /* PageViewControllerBottomSheet.swift in Sources */,
@@ -351,6 +350,7 @@
 				0484A4F225A8864D00C3320F /* OrderStructure.swift in Sources */,
 				0484A48E25A6747700C3320F /* SceneDelegate.swift in Sources */,
 				0484A4AC25A6767E00C3320F /* MainViewController.swift in Sources */,
+				0434714125AE3AAC00C49FAF /* BasketViewController.swift in Sources */,
 				0484A4C125A67BC900C3320F /* TableViewCellForMerch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

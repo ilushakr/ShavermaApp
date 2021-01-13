@@ -9,7 +9,7 @@ import UIKit
 import MaterialComponents.MaterialBottomSheet
 import SDWebImage
 
-class ItemBottomSheetViewController: UIViewController {
+class ItemBottomSheetViewController: UIViewController{
     
     var index = 0
     var bottomSheet: MDCBottomSheetController? = nil
@@ -23,11 +23,11 @@ class ItemBottomSheetViewController: UIViewController {
     @IBOutlet weak var bottomAnchorConstrait: NSLayoutConstraint!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var hlebSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var deleteLabel: UILabel!
     @IBOutlet weak var addLabel: UILabel!
     @IBOutlet weak var addCollectionView: DynamicHeightCollectionView!
     @IBOutlet weak var deleteCollectionView: DynamicHeightCollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -162,7 +162,9 @@ class ItemBottomSheetViewController: UIViewController {
 
     func showToast(message : String, font: UIFont) {
 
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/4, y: self.view.frame.size.height-150, width: self.view.frame.size.width/2, height: 35))
+        let bottomPadding = UIApplication.shared.windows[0].safeAreaInsets.bottom
+        
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/4, y: self.view.frame.size.height - 110 - bottomPadding, width: self.view.frame.size.width/2, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.font = font
@@ -178,12 +180,11 @@ class ItemBottomSheetViewController: UIViewController {
             toastLabel.removeFromSuperview()
         })
     }
-    
 }
 
 
 extension ItemBottomSheetViewController: UIScrollViewDelegate{
-    
+
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if (scrollView.contentOffset.y <= 0){
             if(scrollView.panGestureRecognizer.translation(in: scrollView.superview).y > 0)
@@ -251,7 +252,19 @@ extension ItemBottomSheetViewController: UICollectionViewDataSource, UICollectio
             print("add -> \(indexPath.row)")
         }
         else{
-            print("delete -> \(indexPath.row)")
+            let cell = collectionView.cellForItem(at: indexPath) as! CellForAddDelete
+            cell.layer.borderWidth = 1
+            cell.layer.cornerRadius = 14
+            if(!cell.isAddDelete){
+//                cell.backgroundColor = UIColor.systemRed
+                cell.layer.borderColor = UIColor.black.cgColor
+                cell.isAddDelete = true
+            }
+            else{
+//                cell.backgroundColor = UIColor.systemTeal
+                cell.layer.borderColor = UIColor.white.cgColor
+                cell.isAddDelete = false
+            }
         }
     }
     

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -21,7 +22,7 @@
                 <outlet property="imageView" destination="wXZ-Ob-c9A" id="dNT-FZ-WQb"/>
                 <outlet property="infoButton" destination="UlV-OI-pOC" id="ePe-jG-ZFU"/>
                 <outlet property="nameLabel" destination="97b-dy-vDn" id="bID-Fp-Tck"/>
-                <outlet property="scrollView" destination="b9m-tK-aJn" id="Pge-tN-ptx"/>
+                <outlet property="scrollView" destination="E2r-jj-sf5" id="GqK-WO-BQU"/>
                 <outlet property="toBasketButton" destination="Zh1-T8-mj7" id="VS8-gu-Wnn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weightLabel" destination="bPj-mW-KV4" id="WMx-IH-XLk"/>
@@ -83,8 +84,8 @@
                                         <constraint firstItem="bPj-mW-KV4" firstAttribute="top" secondItem="cp3-TO-3Yl" secondAttribute="top" id="dCB-fI-yb2"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-4s-ifO" userLabel="Add">
-                                    <rect key="frame" x="40" y="529" width="31" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-4s-ifO" userLabel="Add">
+                                    <rect key="frame" x="40" y="529" width="76.5" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -99,8 +100,8 @@
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-b9-K4p" userLabel="Delete">
-                                    <rect key="frame" x="40" y="677" width="49.5" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Убрать" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-b9-K4p" userLabel="Delete">
+                                    <rect key="frame" x="40" y="677" width="56" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -166,16 +167,24 @@
                     <viewLayoutGuide key="frameLayoutGuide" id="Jnq-ZO-geT"/>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh1-T8-mj7">
-                    <rect key="frame" x="60" y="812" width="294" height="30"/>
+                    <rect key="frame" x="20" y="807" width="374" height="35"/>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    <state key="normal" title="В корзину"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="SeX-qG-OOV"/>
+                    </constraints>
+                    <state key="normal" title="В корзину">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="toBasket:" destination="-1" eventType="touchUpInside" id="5Bh-Wi-Jcv"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTh-KW-O1I">
                     <rect key="frame" x="50" y="50" width="34" height="30"/>
-                    <state key="normal" title="Back"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="backToMenu:" destination="-1" eventType="touchUpInside" id="ev8-YK-bUQ"/>
                     </connections>
@@ -188,8 +197,8 @@
                 <constraint firstItem="QTh-KW-O1I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="CFf-w4-k4b"/>
                 <constraint firstItem="E2r-jj-sf5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tvt-0k-rio"/>
                 <constraint firstItem="QTh-KW-O1I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="dpu-wj-pVs"/>
-                <constraint firstItem="Zh1-T8-mj7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="nwx-cR-i3f"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zh1-T8-mj7" secondAttribute="trailing" constant="60" id="sER-eJ-xZx"/>
+                <constraint firstItem="Zh1-T8-mj7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="nwx-cR-i3f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zh1-T8-mj7" secondAttribute="trailing" constant="20" id="sER-eJ-xZx"/>
                 <constraint firstItem="E2r-jj-sf5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sgf-56-dSb"/>
                 <constraint firstItem="E2r-jj-sf5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tmd-Ye-OYl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Zh1-T8-mj7" secondAttribute="bottom" constant="20" id="zcj-0j-CLq"/>

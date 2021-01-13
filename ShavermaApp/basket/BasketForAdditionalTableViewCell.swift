@@ -25,9 +25,6 @@ class BasketForAdditionalTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(collectionView.frame.height)
-        print(UIScreen.main.bounds.height / 6)
-    
         
         cellSize = CGSize(width: screenSize / 4, height: screenSize / 6 - 30 - addLabel.frame.height)
         collectionView.register(AdditionalBasketCollectionViewCell.nib(), forCellWithReuseIdentifier: AdditionalBasketCollectionViewCell.id)

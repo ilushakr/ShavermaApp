@@ -16,6 +16,7 @@ class CellForAddDelete: UICollectionViewCell {
         return UINib(nibName: id, bundle: nil)
     }
     
+    var isAddDelete = false
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

@@ -19,10 +19,15 @@ let additional: [Product] = menu.groups![1].products!
 
 class MenuTableViewController: UITableViewController {
     
-    let merchCellSpacing = (1 / 16) * UIScreen.main.bounds.width
-    let merchCellWidth = (3 / 4) * UIScreen.main.bounds.width
+//    let merchCellSpacing = (1 / 16) * UIScreen.main.bounds.width
+//    let merchCellWidth = (3 / 4) * UIScreen.main.bounds.width
+//    let merchCellHeight = (1 / 4) * UIScreen.main.bounds.width
+//    let spacing = (1 / 8) * UIScreen.main.bounds.width
+    
+    let merchCellSpacing = (1 / 32) * UIScreen.main.bounds.width
+    let merchCellWidth = (7 / 8) * UIScreen.main.bounds.width
     let merchCellHeight = (1 / 4) * UIScreen.main.bounds.width
-    let spacing = (1 / 8) * UIScreen.main.bounds.width
+    let spacing = (1 / 16) * UIScreen.main.bounds.width
     
     lazy var collectionView: UICollectionView = {
         let layout = PagingCollectionViewLayout()
@@ -64,7 +69,6 @@ class MenuTableViewController: UITableViewController {
         
         unscrollableSegmentedControl.addTarget(self, action: #selector(indexChanged(_:)), for: .valueChanged)
         unscrollableSegmentedControl.selectedSegmentIndex = 0
-//        unscrollableSegmentedControl.backgroundColor = UIColor(patternImage: UIImage(named: "kitten1")!)
         unscrollableSegmentedControl.selectedSegmentTintColor = .systemYellow
         
         scrollForGroups = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: unscrollableSegmentedControl.frame.height + 10))
@@ -148,7 +152,6 @@ class MenuTableViewController: UITableViewController {
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellForMenuUI.id, for: indexPath) as! TableViewCellForMenuUI
-//            cell.configure(product: menuItems[indexPath.row], image: "kitten1", row: indexPath.row)
             cell.product = menuItems[indexPath.row]
             cell.delegate = self
             cell.configure(row: indexPath.row)
@@ -179,7 +182,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     
-    //    handle scrolling with tabs
+//    handle scrolling with tabs
     private var lastContentOffset: CGFloat = 0
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -198,7 +201,7 @@ class MenuTableViewController: UITableViewController {
             }
         }
 
-            // update the new position acquired
+// update the new position acquired
         self.lastContentOffset = scrollView.contentOffset.y
     }
     
@@ -217,26 +220,6 @@ class MenuTableViewController: UITableViewController {
             scrollForGroups.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         }
     }
-    
-    func showToast(message : String, font: UIFont) {
-
-        let toastLabel = UILabel(frame: CGRect(x: UIScreen.main.bounds.width / 4, y: UIScreen.main.bounds.height - 250, width: UIScreen.main.bounds.width / 2, height: 35))
-        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        toastLabel.textColor = UIColor.white
-        toastLabel.font = font
-        toastLabel.textAlignment = .center;
-        toastLabel.text = message
-        toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
-        toastLabel.clipsToBounds  =  true
-        self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 0.5, delay: 0.7, options: .curveEaseOut, animations: {
-             toastLabel.alpha = 0.0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
-        })
-    }
-    
 }
 
 extension MenuTableViewController: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -269,7 +252,7 @@ extension MenuTableViewController: UICollectionViewDataSource, UICollectionViewD
 
 extension MenuTableViewController: TableViewCellForMenuUIDelegate{
     func didTapped(_ tag: Int) {
-        self.showToast(message: "Добавлено в корзину", font: .systemFont(ofSize: 12.0))
+        (tabBarController as! MainViewController).showToast(message: "Добавлено в корзину", font: .systemFont(ofSize: 12.0))
         order.insert(OrderProduct(product: menuItems[tag], productCount: 1), at: 0)
     }
 }

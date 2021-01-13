@@ -11,7 +11,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         delegate = self
     }
 
@@ -19,6 +19,23 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
             return MyTransition(viewControllers: tabBarController.viewControllers)
         }
     
+    func showToast(message : String, font: UIFont) {
+        let toastLabel = UILabel(frame: CGRect(x: UIScreen.main.bounds.width / 4, y: UIScreen.main.bounds.height - tabBar.frame.height - 35 - 20, width: UIScreen.main.bounds.width / 2, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 0.5, delay: 0.7, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
 }
 
 class MyTransition: NSObject, UIViewControllerAnimatedTransitioning {
